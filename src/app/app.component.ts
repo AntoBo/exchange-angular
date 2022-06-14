@@ -23,8 +23,6 @@ export class AppComponent implements OnInit {
         this.rates = Object.values(this.data);
         this.uahRate = this.data.UAH.toFixed(2);
         this.eurRate = (this.data.UAH / this.data.EUR).toFixed(2);
-        // console.log('currencies ', this.currencies);
-        // console.log('rates ', this.rates);
       })
       .catch((err) => console.error(err));
   }
