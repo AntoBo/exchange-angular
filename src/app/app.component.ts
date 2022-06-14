@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { getCurrAPI } from '../services/fetchAPI';
+import getCurrAPI from '../services/fetchAPI';
 
 interface Data {}
 

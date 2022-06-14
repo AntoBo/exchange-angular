@@ -5,23 +5,40 @@
       <label
         >Currency
         <select (change)="onSelectCurr1($event)" name="" id="">
-          <option *ngFor="let currency of currencies" [value]="currency">
+          <option
+            *ngFor="let currency of currencies"
+            [value]="currency"
+            [selected]="currency === 'UAH'"
+          >
             {{ currency }}
           </option>
         </select></label
       >
-      <label>Amount<input (keyup)="onInputCurr1($event)" type="text" /></label>
+      <label
+        >Amount<input
+          (keyup)="onInputCurr1($event)"
+          type="text"
+          [value]="result1.toFixed(2)"
+      /></label>
     </div>
     <div class="curr-container">
       <label
         >Currency<select (change)="onSelectCurr2($event)" name="" id="">
-          <option *ngFor="let currency of currencies" [value]="currency">
+          <option
+            *ngFor="let currency of currencies"
+            [value]="currency"
+            [selected]="currency === 'EUR'"
+          >
             {{ currency }}
           </option>
         </select></label
       >
-      <label>Amount<input (keyup)="onInputCurr2($event)" type="text" /></label>
+      <label
+        >Amount<input
+          (keyup)="onInputCurr2($event)"
+          type="text"
+          [value]="result2.toFixed(2)"
+      /></label>
     </div>
   </div>
-  <h2>0.00</h2>
 </div>
