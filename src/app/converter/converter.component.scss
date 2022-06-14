@@ -4,16 +4,38 @@
 
 .converter-wrapper {
   display: flex;
+  // &:last-child {
+  //   margin-left: 30px;
+  // }
 }
 .curr-container {
-  & label {
-    display: flex;
-  }
   &:last-child {
-    margin-left: 30px;
+    margin-left: 60px;
   }
 }
 
-h2 {
+h1 {
   text-align: left;
+  font-size: 24px;
+  color: #3c5295;
+  margin-bottom: 30px;
+}
+label {
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: rgb(160, 160, 160);
+}
+select {
+  margin-bottom: 30px;
+}
+select,
+input {
+  font-weight: bold;
+  font-size: 16px;
+  width: 100px;
+  padding: 5px;
+  padding-left: 0;
+  border: 0;
+  border-bottom: 2px solid grey;
 }

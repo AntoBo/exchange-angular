@@ -10,7 +10,7 @@ export class ConverterComponent {
   curr1 = 'UAH';
   amount1: number = 0;
   curr2 = 'EUR';
-  amount2 = 0;
+  amount2: number = 0;
 
   result1 = 0;
   result2 = 0;

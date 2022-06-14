@@ -1,44 +1,43 @@
 <div class="container">
-  <h1>Converter</h1>
+  <h1>CONVERTER</h1>
   <div class="converter-wrapper">
     <div class="curr-container">
-      <label
-        >Currency
-        <select (change)="onSelectCurr1($event)" name="" id="">
-          <option
-            *ngFor="let currency of currencies"
-            [value]="currency"
-            [selected]="currency === 'UAH'"
-          >
-            {{ currency }}
-          </option>
-        </select></label
-      >
-      <label
-        >Amount<input
-          (keyup)="onInputCurr1($event)"
-          type="text"
-          [value]="result1.toFixed(2)"
-      /></label>
+      <label for="curr1">Currency</label>
+      <select (change)="onSelectCurr1($event)" id="curr1">
+        <option
+          *ngFor="let currency of currencies"
+          [value]="currency"
+          [selected]="currency === 'UAH'"
+        >
+          {{ currency }}
+        </option>
+      </select>
+      <label for="amount1">Amount</label>
+      <input
+        id="amount1"
+        (keyup)="onInputCurr1($event)"
+        type="text"
+        [value]="result1.toFixed(2)"
+      />
     </div>
     <div class="curr-container">
-      <label
-        >Currency<select (change)="onSelectCurr2($event)" name="" id="">
-          <option
-            *ngFor="let currency of currencies"
-            [value]="currency"
-            [selected]="currency === 'EUR'"
-          >
-            {{ currency }}
-          </option>
-        </select></label
-      >
-      <label
-        >Amount<input
-          (keyup)="onInputCurr2($event)"
-          type="text"
-          [value]="result2.toFixed(2)"
-      /></label>
+      <label for="curr2">Currency</label>
+      <select (change)="onSelectCurr2($event)" id="curr2">
+        <option
+          *ngFor="let currency of currencies"
+          [value]="currency"
+          [selected]="currency === 'EUR'"
+        >
+          {{ currency }}
+        </option>
+      </select>
+      <label for="amount2">Amount</label
+      ><input
+        id="amount2"
+        (keyup)="onInputCurr2($event)"
+        type="text"
+        [value]="result2.toFixed(2)"
+      />
     </div>
   </div>
 </div>

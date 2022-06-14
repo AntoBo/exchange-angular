@@ -1,10 +1,16 @@
 <header class="header">
   <ul>
-    <li *ngIf="uah">
-      $<img class="flag" /> <span>{{ uah }}</span>
+    <li>
+      <span class="curr">$</span
+      ><img class="flag" src="../../assets/usa-flag.png" width="30" />
+      <span *ngIf="!uah">...</span>
+      <span>{{ uah }}</span>
     </li>
-    <li *ngIf="euro">
-      €<img class="flag" /> <span>{{ euro }}</span>
+    <li>
+      <span class="curr">€</span
+      ><img class="flag" src="../../assets/euro-flag.png" width="30" />
+      <span *ngIf="!euro">...</span>
+      <span>{{ euro }}</span>
     </li>
   </ul>
 </header>
