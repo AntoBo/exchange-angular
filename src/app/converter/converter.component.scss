@@ -4,9 +4,9 @@
 
 .converter-wrapper {
   display: flex;
-  // &:last-child {
-  //   margin-left: 30px;
-  // }
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 .curr-container {
   &:last-child {
@@ -16,6 +16,9 @@
 
 h1 {
   text-align: left;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
   font-size: 24px;
   color: #3c5295;
   margin-bottom: 30px;
