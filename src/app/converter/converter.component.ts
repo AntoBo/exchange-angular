@@ -42,6 +42,7 @@ export class ConverterComponent {
       rateFrom: this.data[this.curr2],
       rateTo: this.data[this.curr1],
     });
+    this.amount2 = this.result2;
   }
   onInputCurr2(event: any) {
     this.amount2 = event.target.value;
@@ -50,5 +51,6 @@ export class ConverterComponent {
       rateFrom: this.data[this.curr1],
       rateTo: this.data[this.curr2],
     });
+    this.amount1 = this.result1;
   }
 }
