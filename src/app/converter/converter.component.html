@@ -16,6 +16,7 @@
       <input
         id="amount1"
         (keyup)="onInputCurr1($event)"
+        (mousedown)="onInputCurr1($event)"
         type="number"
         [value]="result1.toFixed(2)"
       />
@@ -35,6 +36,7 @@
       ><input
         id="amount2"
         (keyup)="onInputCurr2($event)"
+        (mousedown)="onInputCurr2($event)"
         type="number"
         [value]="result2.toFixed(2)"
       />
