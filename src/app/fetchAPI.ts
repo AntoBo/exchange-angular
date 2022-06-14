@@ -5,14 +5,15 @@ const URL = 'https://currencyscoop.p.rapidapi.com/latest/';
 
 export const getCurrAPI = async () => {
   try {
-    const response = await axios.get(URL, {
+    const resp = await axios.get(URL, {
       headers: {
         'X-RapidAPI-Key': KEY,
         'X-RapidAPI-Host': 'currencyscoop.p.rapidapi.com',
       },
     });
-    console.log('API responsed: ', response);
+    return resp.data.response.rates;
   } catch (error) {
     console.error(error);
+    return error;
   }
 };

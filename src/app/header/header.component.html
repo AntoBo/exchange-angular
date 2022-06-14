@@ -1,6 +1,10 @@
 <header class="header">
   <ul>
-    <li>$<img class="flag" /> <span>35.00 UAH</span></li>
-    <li>€<img class="flag" /> <span>40.00 UAH</span></li>
+    <li *ngIf="uahRate">
+      $<img class="flag" /> <span>{{ uahRate }}</span>
+    </li>
+    <li *ngIf="eurRate">
+      €<img class="flag" /> <span>{{ eurRate }}</span>
+    </li>
   </ul>
 </header>
