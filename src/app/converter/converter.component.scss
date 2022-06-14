@@ -1,0 +1,19 @@
+.container {
+  padding: 20px;
+}
+
+.converter-wrapper {
+  display: flex;
+}
+.curr-container {
+  & label {
+    display: flex;
+  }
+  &:last-child {
+    margin-left: 30px;
+  }
+}
+
+h2 {
+  text-align: left;
+}
