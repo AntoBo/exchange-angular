@@ -2,12 +2,25 @@
   <h1>Converter</h1>
   <div class="converter-wrapper">
     <div class="curr-container">
-      <label>Currency<select name="" id=""></select></label>
-      <label>Amount<input type="text" /></label>
+      <label
+        >Currency
+        <select (change)="onSelectCurr1($event)" name="" id="">
+          <option *ngFor="let currency of currencies" [value]="currency">
+            {{ currency }}
+          </option>
+        </select></label
+      >
+      <label>Amount<input (keyup)="onInputCurr1($event)" type="text" /></label>
     </div>
     <div class="curr-container">
-      <label>Currency<select name="" id=""></select></label>
-      <label>Amount<input type="text" /></label>
+      <label
+        >Currency<select (change)="onSelectCurr2($event)" name="" id="">
+          <option *ngFor="let currency of currencies" [value]="currency">
+            {{ currency }}
+          </option>
+        </select></label
+      >
+      <label>Amount<input (keyup)="onInputCurr2($event)" type="text" /></label>
     </div>
   </div>
   <h2>0.00</h2>

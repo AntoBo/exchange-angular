@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class HeaderComponent {
   // constructor() {}
-  @Input() uahRate!: String;
-  @Input() eurRate!: String;
+  @Input() uah!: String;
+  @Input() euro!: String;
 }
